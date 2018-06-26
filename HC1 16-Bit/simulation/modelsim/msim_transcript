@@ -1,0 +1,258 @@
+# Reading E:/TH/Quartus II/modelsim_ase/tcl/vsim/pref.tcl 
+# do HC1_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying E:\TH\Quartus II\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied E:\TH\Quartus II\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {E:/Programming/GitHub/HC1-16-Bit/src/seven_segment.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seven_segment
+# -- Compiling architecture rtl of seven_segment
+# vcom -93 -work work {E:/Programming/GitHub/HC1-16-Bit/src/memory_unit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory_unit
+# -- Compiling architecture rtl of memory_unit
+# vcom -93 -work work {E:/Programming/GitHub/HC1-16-Bit/src/instruction_register.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity instruction_register
+# -- Compiling architecture rtl of instruction_register
+# vcom -93 -work work {E:/Programming/GitHub/HC1-16-Bit/src/control_unit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity control_unit
+# -- Compiling architecture rtl of control_unit
+# vcom -93 -work work {E:/Programming/GitHub/HC1-16-Bit/src/arithmetic_logic_unit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity arithmetic_logic_unit
+# -- Compiling architecture rtl of arithmetic_logic_unit
+# vcom -93 -work work {E:/Programming/GitHub/HC1-16-Bit/src/accumulator.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity accumulator
+# -- Compiling architecture rtl of accumulator
+# vcom -93 -work work {E:/Programming/GitHub/HC1-16-Bit/src/program_counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity program_counter
+# -- Compiling architecture rtl of program_counter
+# vcom -93 -work work {E:/Programming/GitHub/HC1-16-Bit/src/clock_divider.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity clock_divider
+# -- Compiling architecture rtl1 of clock_divider
+# vcom -93 -work work {E:/Programming/GitHub/HC1-16-Bit/src/cpu.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cpu
+# -- Compiling architecture rtl of cpu
+# -- Loading entity control_unit
+# ** Error: E:/Programming/GitHub/HC1-16-Bit/src/cpu.vhd(62): (vcom-1141) Identifier "control_unit" does not identify a component declaration.
+# 
+# -- Loading package NUMERIC_STD
+# -- Loading entity memory_unit
+# ** Error: E:/Programming/GitHub/HC1-16-Bit/src/cpu.vhd(65): (vcom-1141) Identifier "memory_unit" does not identify a component declaration.
+# 
+# -- Loading entity arithmetic_logic_unit
+# ** Error: E:/Programming/GitHub/HC1-16-Bit/src/cpu.vhd(66): (vcom-1141) Identifier "arithmetic_logic_unit" does not identify a component declaration.
+# 
+# -- Loading entity accumulator
+# ** Error: E:/Programming/GitHub/HC1-16-Bit/src/cpu.vhd(67): (vcom-1141) Identifier "accumulator" does not identify a component declaration.
+# 
+# -- Loading entity instruction_register
+# ** Error: E:/Programming/GitHub/HC1-16-Bit/src/cpu.vhd(69): (vcom-1141) Identifier "instruction_register" does not identify a component declaration.
+# 
+# -- Loading entity program_counter
+# ** Error: E:/Programming/GitHub/HC1-16-Bit/src/cpu.vhd(70): (vcom-1141) Identifier "program_counter" does not identify a component declaration.
+# 
+# ** Error: E:/Programming/GitHub/HC1-16-Bit/src/cpu.vhd(99): VHDL Compiler exiting
+# ** Error: E:/TH/Quartus II/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./HC1_run_msim_rtl_vhdl.do line 16
+# E:/TH/Quartus II/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {E:/Programming/GitHub/HC1-16-Bit/src/cpu.vhd}"
+vsim +altera -do HC1_run_msim_rtl_vhdl.do -l msim_transcript -gui rtl_work.accumulator rtl_work.arithmetic_logic_unit rtl_work.clock_divider rtl_work.control_unit rtl_work.instruction_register rtl_work.memory_unit rtl_work.program_counter rtl_work.seven_segment
+# vsim +altera -do HC1_run_msim_rtl_vhdl.do -l msim_transcript -gui rtl_work.accumulator rtl_work.arithmetic_logic_unit rtl_work.clock_divider rtl_work.control_unit rtl_work.instruction_register rtl_work.memory_unit rtl_work.program_counter rtl_work.seven_segment 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading rtl_work.accumulator(rtl)
+# Loading ieee.numeric_std(body)
+# Loading rtl_work.arithmetic_logic_unit(rtl)
+# Loading rtl_work.clock_divider(rtl1)
+# Loading rtl_work.control_unit(rtl)
+# Loading rtl_work.instruction_register(rtl)
+# Loading rtl_work.memory_unit(rtl)
+# Loading rtl_work.program_counter(rtl)
+# Loading rtl_work.seven_segment(rtl)
+# do HC1_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {E:/Programming/GitHub/HC1-16-Bit/src/seven_segment.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seven_segment
+# -- Compiling architecture rtl of seven_segment
+# vcom -93 -work work {E:/Programming/GitHub/HC1-16-Bit/src/memory_unit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory_unit
+# -- Compiling architecture rtl of memory_unit
+# vcom -93 -work work {E:/Programming/GitHub/HC1-16-Bit/src/instruction_register.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity instruction_register
+# -- Compiling architecture rtl of instruction_register
+# vcom -93 -work work {E:/Programming/GitHub/HC1-16-Bit/src/control_unit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity control_unit
+# -- Compiling architecture rtl of control_unit
+# vcom -93 -work work {E:/Programming/GitHub/HC1-16-Bit/src/arithmetic_logic_unit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity arithmetic_logic_unit
+# -- Compiling architecture rtl of arithmetic_logic_unit
+# vcom -93 -work work {E:/Programming/GitHub/HC1-16-Bit/src/accumulator.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity accumulator
+# -- Compiling architecture rtl of accumulator
+# vcom -93 -work work {E:/Programming/GitHub/HC1-16-Bit/src/program_counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity program_counter
+# -- Compiling architecture rtl of program_counter
+# vcom -93 -work work {E:/Programming/GitHub/HC1-16-Bit/src/clock_divider.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity clock_divider
+# -- Compiling architecture rtl1 of clock_divider
+# vcom -93 -work work {E:/Programming/GitHub/HC1-16-Bit/src/cpu.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cpu
+# -- Compiling architecture rtl of cpu
+# -- Loading entity control_unit
+# ** Error: E:/Programming/GitHub/HC1-16-Bit/src/cpu.vhd(62): (vcom-1141) Identifier "control_unit" does not identify a component declaration.
+# 
+# -- Loading package NUMERIC_STD
+# -- Loading entity memory_unit
+# ** Error: E:/Programming/GitHub/HC1-16-Bit/src/cpu.vhd(65): (vcom-1141) Identifier "memory_unit" does not identify a component declaration.
+# 
+# -- Loading entity arithmetic_logic_unit
+# ** Error: E:/Programming/GitHub/HC1-16-Bit/src/cpu.vhd(66): (vcom-1141) Identifier "arithmetic_logic_unit" does not identify a component declaration.
+# 
+# -- Loading entity accumulator
+# ** Error: E:/Programming/GitHub/HC1-16-Bit/src/cpu.vhd(67): (vcom-1141) Identifier "accumulator" does not identify a component declaration.
+# 
+# -- Loading entity instruction_register
+# ** Error: E:/Programming/GitHub/HC1-16-Bit/src/cpu.vhd(69): (vcom-1141) Identifier "instruction_register" does not identify a component declaration.
+# 
+# -- Loading entity program_counter
+# ** Error: E:/Programming/GitHub/HC1-16-Bit/src/cpu.vhd(70): (vcom-1141) Identifier "program_counter" does not identify a component declaration.
+# 
+# ** Error: E:/Programming/GitHub/HC1-16-Bit/src/cpu.vhd(99): VHDL Compiler exiting
+# ** Error: E:/TH/Quartus II/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./HC1_run_msim_rtl_vhdl.do line 16
+# E:/TH/Quartus II/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {E:/Programming/GitHub/HC1-16-Bit/src/cpu.vhd}"
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /memory_unit
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+run -continue

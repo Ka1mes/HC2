@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Jun 05 16:05:32 2018
+Quartus II 32-bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Revision Name : HC1
+Top-level Entity Name : HC1
+Family : Cyclone II
+Total logic elements : 4,171
+    Total combinational functions : 2,594
+    Dedicated logic registers : 1,846
+Total registers : 1846
+Total pins : 105
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 1
+Total PLLs : 0

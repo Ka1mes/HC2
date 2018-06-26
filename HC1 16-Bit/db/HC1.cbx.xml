@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="HC1">
+		<CBX_INST_ENTRY INSTANCE_NAME="|HC1|cpu:CPUNIT|arithmetic_logic_unit:ALU|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_rto.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HC1|cpu:CPUNIT|arithmetic_logic_unit:ALU|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_ulo.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HC1|cpu:CPUNIT|arithmetic_logic_unit:ALU|lpm_mult:Mult0" CBX_FILE_NAME="mult_lus.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

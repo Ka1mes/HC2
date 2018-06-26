@@ -1,0 +1,21 @@
+
+State Machine - |HC1|cpu:CPUNIT|control_unit:CTRL|state
+Name state.NOP_IR state.NOP_MEM state.NOP_OUT state.NOP_PC state.JUMP_PC_MEM state.ACC_inEnter state.ACC_ALU_MOD state.ACC_ALU_SUBI state.ACC_ALU_ADDI state.ACC_ALU_MUL state.ACC_ALU_DIV state.ACC_ALU_NAND state.ACC_ALU_SUB state.ACC_ALU_ADD state.ACC_MEM state.MEM_STORE state.CTRL_LOAD_IR state.RESET_STATE 
+state.RESET_STATE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.CTRL_LOAD_IR 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.MEM_STORE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.ACC_MEM 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.ACC_ALU_ADD 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.ACC_ALU_SUB 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.ACC_ALU_NAND 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.ACC_ALU_DIV 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.ACC_ALU_MUL 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.ACC_ALU_ADDI 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.ACC_ALU_SUBI 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.ACC_ALU_MOD 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.ACC_inEnter 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.JUMP_PC_MEM 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.NOP_PC 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.NOP_OUT 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.NOP_MEM 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.NOP_IR 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

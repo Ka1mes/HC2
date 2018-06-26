@@ -1,0 +1,312 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Programming\GitHub\HC1-16-Bit\simulation\modelsim
+Eaccumulator
+Z1 w1473965599
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dE:\Programming\GitHub\HC1-16-Bit\simulation\modelsim
+Z5 8E:/Programming/GitHub/HC1-16-Bit/src/accumulator.vhd
+Z6 FE:/Programming/GitHub/HC1-16-Bit/src/accumulator.vhd
+l0
+L14
+V0hjafM0HDR47:^E<zVh0i0
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1473968074.909000
+Z9 !s90 -reportprogress|300|-93|-work|work|E:/Programming/GitHub/HC1-16-Bit/src/accumulator.vhd|
+Z10 !s107 E:/Programming/GitHub/HC1-16-Bit/src/accumulator.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 PWgeiAFo703jzoaTg60CA1
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 11 accumulator 0 22 0hjafM0HDR47:^E<zVh0i0
+l36
+L31
+V:D2fM;T[7DFAIl1J3U__A2
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 7Y@=g7zhle;QiUilz9kBz0
+!i10b 1
+Earithmetic_logic_unit
+Z13 w1473966994
+Z14 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z15 8E:/Programming/GitHub/HC1-16-Bit/src/arithmetic_logic_unit.vhd
+Z16 FE:/Programming/GitHub/HC1-16-Bit/src/arithmetic_logic_unit.vhd
+l0
+L15
+VNLZA7JPdH:`2j[d=lC_e>3
+R7
+31
+Z17 !s108 1473968074.668000
+Z18 !s90 -reportprogress|300|-93|-work|work|E:/Programming/GitHub/HC1-16-Bit/src/arithmetic_logic_unit.vhd|
+Z19 !s107 E:/Programming/GitHub/HC1-16-Bit/src/arithmetic_logic_unit.vhd|
+R11
+R12
+!s100 a18dH:jNh]bo]jjZ]e1H82
+!i10b 1
+Artl
+R14
+R2
+R3
+DEx4 work 21 arithmetic_logic_unit 0 22 NLZA7JPdH:`2j[d=lC_e>3
+l28
+L27
+VeUSa3onQ@@D>;4Gi=3oBj2
+R7
+31
+R17
+R18
+R19
+R11
+R12
+!s100 ZmI[BNQ_4dc;1eHahKYH82
+!i10b 1
+Eclock_divider
+Z20 w1454066189
+R14
+R2
+R3
+R4
+Z21 8E:/Programming/GitHub/HC1-16-Bit/src/clock_divider.vhd
+Z22 FE:/Programming/GitHub/HC1-16-Bit/src/clock_divider.vhd
+l0
+L15
+V5a8F?c7=C;3j5a2:_6ja11
+R7
+31
+Z23 !s108 1473968075.336000
+Z24 !s90 -reportprogress|300|-93|-work|work|E:/Programming/GitHub/HC1-16-Bit/src/clock_divider.vhd|
+Z25 !s107 E:/Programming/GitHub/HC1-16-Bit/src/clock_divider.vhd|
+R11
+R12
+!s100 H6iglLFiBYSID5i1oZ9WT1
+!i10b 1
+Artl1
+R14
+R2
+R3
+DEx4 work 13 clock_divider 0 22 5a8F?c7=C;3j5a2:_6ja11
+l83
+L29
+VL5FLdabROJg5G6[SOm3R`2
+R7
+31
+R23
+R24
+R25
+R11
+R12
+!s100 5T9I4alQ6h23LlN_9QV0V0
+!i10b 1
+Econtrol_unit
+R1
+R2
+R3
+R4
+Z26 8E:/Programming/GitHub/HC1-16-Bit/src/control_unit.vhd
+Z27 FE:/Programming/GitHub/HC1-16-Bit/src/control_unit.vhd
+l0
+L14
+VO75caZUB?Y;E0L7^H5Y2f2
+R7
+31
+Z28 !s108 1473968074.520000
+Z29 !s90 -reportprogress|300|-93|-work|work|E:/Programming/GitHub/HC1-16-Bit/src/control_unit.vhd|
+Z30 !s107 E:/Programming/GitHub/HC1-16-Bit/src/control_unit.vhd|
+R11
+R12
+!s100 4ElbH9hEEkJ6oQ:`_H6mj2
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 12 control_unit 0 22 O75caZUB?Y;E0L7^H5Y2f2
+l89
+L63
+V[?bU1ZBTokW@SI8NR4[zb1
+R7
+31
+R28
+R29
+R30
+R11
+R12
+!s100 44T9k?<nBRT4]lR2gL:RI0
+!i10b 1
+Ecpu
+w1473965614
+R2
+R3
+R4
+8E:/Programming/GitHub/HC1-16-Bit/src/cpu.vhd
+FE:/Programming/GitHub/HC1-16-Bit/src/cpu.vhd
+l0
+L15
+V[c6GC96<G9iPT<Ge^1;aG2
+!s100 NJ?]PX16Dl=J[ZzTCQENj0
+R7
+31
+!i10b 1
+!s108 1473968075.522000
+!s90 -reportprogress|300|-93|-work|work|E:/Programming/GitHub/HC1-16-Bit/src/cpu.vhd|
+!s107 E:/Programming/GitHub/HC1-16-Bit/src/cpu.vhd|
+R11
+R12
+Einstruction_register
+Z31 w1473965678
+R2
+R3
+R4
+Z32 8E:/Programming/GitHub/HC1-16-Bit/src/instruction_register.vhd
+Z33 FE:/Programming/GitHub/HC1-16-Bit/src/instruction_register.vhd
+l0
+L14
+V@HA6kL6oZ152J?14Ao@L<0
+R7
+31
+Z34 !s108 1473968074.374000
+Z35 !s90 -reportprogress|300|-93|-work|work|E:/Programming/GitHub/HC1-16-Bit/src/instruction_register.vhd|
+Z36 !s107 E:/Programming/GitHub/HC1-16-Bit/src/instruction_register.vhd|
+R11
+R12
+!s100 =Vg1l@2<[kAE@dXmc;T:33
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 20 instruction_register 0 22 @HA6kL6oZ152J?14Ao@L<0
+l28
+L27
+VKn4zzoSzi9almD;VO`Bam0
+R7
+31
+R34
+R35
+R36
+R11
+R12
+!s100 3bXz`>SlhGgX>VO8aYk?i3
+!i10b 1
+Ememory_unit
+Z37 w1473967740
+R14
+R2
+R3
+R4
+Z38 8E:/Programming/GitHub/HC1-16-Bit/src/memory_unit.vhd
+Z39 FE:/Programming/GitHub/HC1-16-Bit/src/memory_unit.vhd
+l0
+L15
+VQSS2f4o;6lEk>hO`Z=RHT3
+R7
+31
+Z40 !s108 1473968074.197000
+Z41 !s90 -reportprogress|300|-93|-work|work|E:/Programming/GitHub/HC1-16-Bit/src/memory_unit.vhd|
+Z42 !s107 E:/Programming/GitHub/HC1-16-Bit/src/memory_unit.vhd|
+R11
+R12
+!s100 0R^in4P6kA>aM];Xd7eV`2
+!i10b 1
+Artl
+R14
+R2
+R3
+DEx4 work 11 memory_unit 0 22 QSS2f4o;6lEk>hO`Z=RHT3
+l38
+L29
+V9J_nN:`VLndFRXno2A@GL2
+R7
+31
+R40
+R41
+R42
+R11
+R12
+!s100 f5g?:C>X^GF=^IJ3m]WjR2
+!i10b 1
+Eprogram_counter
+Z43 w1473965640
+R14
+R2
+R3
+R4
+Z44 8E:/Programming/GitHub/HC1-16-Bit/src/program_counter.vhd
+Z45 FE:/Programming/GitHub/HC1-16-Bit/src/program_counter.vhd
+l0
+L15
+VShCXK@edIbfm`[>_ah15Z1
+R7
+31
+Z46 !s108 1473968075.126000
+Z47 !s90 -reportprogress|300|-93|-work|work|E:/Programming/GitHub/HC1-16-Bit/src/program_counter.vhd|
+Z48 !s107 E:/Programming/GitHub/HC1-16-Bit/src/program_counter.vhd|
+R11
+R12
+!s100 =_@IjR4a@U<n;S13doP581
+!i10b 1
+Artl
+R14
+R2
+R3
+DEx4 work 15 program_counter 0 22 ShCXK@edIbfm`[>_ah15Z1
+l34
+L29
+VhUT7gPA:fFLi;dNj9Y`W21
+R7
+31
+R46
+R47
+R48
+R11
+R12
+!s100 k5H]9lnTUOb3QW1Jbkm8j3
+!i10b 1
+Eseven_segment
+R20
+R2
+R3
+R4
+Z49 8E:/Programming/GitHub/HC1-16-Bit/src/seven_segment.vhd
+Z50 FE:/Programming/GitHub/HC1-16-Bit/src/seven_segment.vhd
+l0
+L4
+V0IO`H]Uk_MfkWdIB8i5jO2
+R7
+31
+Z51 !s108 1473968074.007000
+Z52 !s90 -reportprogress|300|-93|-work|work|E:/Programming/GitHub/HC1-16-Bit/src/seven_segment.vhd|
+Z53 !s107 E:/Programming/GitHub/HC1-16-Bit/src/seven_segment.vhd|
+R11
+R12
+!s100 h47HGPAnUUY]4oV<i;J9X1
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 13 seven_segment 0 22 0IO`H]Uk_MfkWdIB8i5jO2
+l12
+L11
+VPeOgRg0:LdbdJ?eo=d1VG2
+R7
+31
+R51
+R52
+R53
+R11
+R12
+!s100 j;1DmfIiMAHFW@H7nSD=13
+!i10b 1

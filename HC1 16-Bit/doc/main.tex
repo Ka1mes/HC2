@@ -1,0 +1,189 @@
+\documentclass[12pt,a4paper,bibliography=totocnumbered,listof=totocnumbered]{scrartcl}
+
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage[right]{eurosym}
+\usepackage[printonlyused]{acronym}
+\usepackage{subfig}
+\usepackage{floatflt}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{colortbl}
+\usepackage{paralist}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage[right]{eurosym}
+\usepackage[subfigure,titles]{tocloft}
+\usepackage[pdfpagelabels=true]{hyperref}
+\usepackage{minted}
+
+\geometry{a4paper, top=27mm, left=30mm, right=20mm, bottom=35mm, headsep=10mm, footskip=12mm}
+
+\hypersetup{unicode=false, pdftoolbar=true, pdfmenubar=true, pdffitwindow=false, pdfstartview={FitH},
+    pdftitle={HC1 VHDL Design},
+    pdfauthor={Matthias Röll},
+    pdfsubject={Comüputer Architecture HC1 },
+    pdfcreator={\LaTeX\ with package \flqq hyperref\frqq},
+    pdfproducer={pdfTeX \the\pdftexversion.\pdftexrevision},
+    pdfkeywords={Documentation},
+    pdfnewwindow=true,
+    colorlinks=true,linkcolor=black,citecolor=black,filecolor=magenta,urlcolor=black}
+\pdfinfo{/CreationDate (D:201412042131)}
+
+\begin{document}
+
+\titlespacing{\section}{0pt}{12pt plus 4pt minus 2pt}{-6pt plus 2pt minus 2pt}
+
+% Kopf- und Fusszeile
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\renewcommand{\leftmark}{\rightmark}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{\thesection\space\contentsname}
+\lfoot{HC1\newline VHDL Design}
+\cfoot{}
+\rfoot{\ \linebreak Seite \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Vorspann
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\theHsection}{\Roman{section}}
+\pagenumbering{Roman}
+
+% ----------------------------------------------------------------------------------------------------------
+% Titelseite
+% ----------------------------------------------------------------------------------------------------------
+\thispagestyle{empty}
+\begin{center}
+    \Large
+    \textbf{THM - University of Applied Sciences}\\
+    \large
+    \textbf{Faculty IEM}\\
+    \vspace*{2cm}
+	\includegraphics[width=0.7\linewidth]{images/cpu.jpg}\\
+	\vspace*{1cm}
+    \Huge
+	\textbf{HC1 Central Processing Unit}\\
+    \vspace*{1cm}
+	\Large
+	\textbf{VHDL Design}\\
+	
+    \vfill
+    \normalsize
+    \newcolumntype{x}[1]{>{\raggedleft\arraybackslash\hspace{0pt}}p{#1}}
+    \begin{tabular}{x{6cm}p{7.5cm}}
+        \rule{0mm}{5ex}\textbf{Author:} & Matthias Röll\newline matthias.roell@iem.thm.de \\
+        \rule{0mm}{5ex}\textbf{Date:} & December 2014 \\
+    \end{tabular}
+\end{center}
+\pagebreak
+
+% ----------------------------------------------------------------------------------------------------------
+% Verzeichnisse
+% ----------------------------------------------------------------------------------------------------------
+\renewcommand{\cfttabpresnum}{Tab.: }
+\renewcommand{\cftfigpresnum}{Abb.: }
+\settowidth{\cfttabnumwidth}{Tab.: 10\quad}
+\settowidth{\cftfignumwidth}{Abb.: 10\quad}
+
+\titlespacing{\section}{0pt}{12pt plus 4pt minus 2pt}{2pt plus 2pt minus 2pt}
+\singlespacing
+\rhead{Inhaltsverzeichnis}
+\renewcommand{\contentsname}{Inhaltsverzeichnis}
+\tableofcontents
+\pagebreak
+\rhead{Verzeichnisse}
+\listoffigures
+%\pagebreak
+\listoftables
+%\pagebreak
+
+% ----------------------------------------------------------------------------------------------------------
+% Abkürzungen
+% ----------------------------------------------------------------------------------------------------------
+\section{Abkürzungsverzeichnis}
+\begin{acronym}[FPGA] % längste Abkürzung steht in eckigen Klammern
+	\setlength{\itemsep}{-\parsep} % geringerer Zeilenabstand
+	\acro{FPGA}{Field Programmable Gate Array}
+\end{acronym}
+\newpage
+
+% ----------------------------------------------------------------------------------------------------------
+% Inhalt
+% ----------------------------------------------------------------------------------------------------------
+% Abstände Überschrift
+\titlespacing{\section}{0pt}{12pt plus 4pt minus 2pt}{-6pt plus 2pt minus 2pt}
+\titlespacing{\subsection}{0pt}{12pt plus 4pt minus 2pt}{-6pt plus 2pt minus 2pt}
+\titlespacing{\subsubsection}{0pt}{12pt plus 4pt minus 2pt}{-6pt plus 2pt minus 2pt}
+
+% Kopfzeile
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\renewcommand{\subsectionmark}[1]{}
+\renewcommand{\subsubsectionmark}[1]{}
+\lhead{Chapter \thesection}
+\rhead{\rightmark}
+
+\onehalfspacing
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\theHsection}{\arabic{section}}
+\setcounter{section}{0}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% ----------------------------------------------------------------------------------------------------------
+% Kapitel
+% ----------------------------------------------------------------------------------------------------------
+
+\include{architecture}
+\include{entities}
+
+% ----------------------------------------------------------------------------------------------------------
+% Anhang
+% ----------------------------------------------------------------------------------------------------------
+\pagenumbering{roman}
+\setcounter{page}{1}
+\lhead{Appendix \thesection}
+
+\begin{appendix}
+\section{Appendix}
+
+\subsection{Accumulator - VHDL}
+\inputminted[fontsize=\footnotesize, linenos, firstline=11]{vhdl}{../src/accumulator.vhd}
+
+\pagebreak
+\subsection{Arithmetic Logical Unit - VHDL}
+\inputminted[fontsize=\footnotesize, linenos, firstline=11]{vhdl}{../src/arithmetic_logic_unit.vhd}
+
+\pagebreak
+\subsection{Control Unit - VHDL}
+\inputminted[fontsize=\footnotesize, linenos, firstline=11]{vhdl}{../src/control_unit.vhd}
+
+\pagebreak
+\subsection{Instruction Register - VHDL}
+\inputminted[fontsize=\footnotesize, linenos, firstline=11]{vhdl}{../src/instruction_register.vhd}
+
+\pagebreak
+\subsection{Memory Unit - VHDL}
+\inputminted[fontsize=\footnotesize, linenos, firstline=11]{vhdl}{../src/memory_unit.vhd}
+
+\pagebreak
+\subsection{Program Counter - VHDL}
+\inputminted[fontsize=\footnotesize, linenos, firstline=11]{vhdl}{../src/program_counter.vhd}
+
+\pagebreak
+\subsection{CPU - VHDL}
+\inputminted[fontsize=\footnotesize, linenos, firstline=11]{vhdl}{../src/cpu.vhd}
+
+\end{appendix}
+\end{document}

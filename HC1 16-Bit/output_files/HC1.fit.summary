@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Jun 05 16:06:38 2018
+Quartus II 32-bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Revision Name : HC1
+Top-level Entity Name : HC1
+Family : Cyclone II
+Device : EP2C35F672C6
+Timing Models : Final
+Total logic elements : 3,302 / 33,216 ( 10 % )
+    Total combinational functions : 2,595 / 33,216 ( 8 % )
+    Dedicated logic registers : 1,846 / 33,216 ( 6 % )
+Total registers : 1849
+Total pins : 105 / 475 ( 22 % )
+Total virtual pins : 0
+Total memory bits : 0 / 483,840 ( 0 % )
+Embedded Multiplier 9-bit elements : 1 / 70 ( 1 % )
+Total PLLs : 0 / 4 ( 0 % )
